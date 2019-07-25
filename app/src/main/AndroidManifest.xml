@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ciit">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Clinic"></activity>
+        <activity android:name=".Rotary" />
+        <activity android:name=".Parents" />
+        <activity android:name=".Events" />
+        <activity android:name=".Refer" />
+        <activity android:name=".Near_by_clinic" />
+        <activity android:name=".Patient_Report" />
+        <activity android:name=".Hospital_Report" />
+        <activity android:name=".Editinfo" />
+        <activity android:name=".Add" />
+        <activity android:name=".Add_info" />
+        <activity android:name=".viewinfo" />
+        <activity android:name=".viewPatients" />
+        <activity android:name=".Patients_home" />
+        <activity android:name=".AccountInformation" />
+        <activity android:name=".My_Account" />
+        <activity android:name=".Login" />
+        <activity android:name=".Reports_Page" />
+        <activity android:name=".Add_Evaluator" />
+        <activity android:name=".evaluator" />
+        <activity android:name=".evaluator_page" />
+        <activity android:name=".Visit_Report" />
+        <activity android:name=".Home" />
+        <activity android:name=".Hospital" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

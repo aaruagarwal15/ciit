@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_weight="0"
+            android:backgroundTint="#ECF2FA">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Visit Report"
+                android:layout_margin="7dp"
+                android:fontFamily="serif"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textStyle="bold"
+                android:editable="false" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btn_expand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Expand Hospital List"
+                    android:textColor="#FFF"
+                    android:backgroundTint="#5E9CD8"
+                    style="@style/Widget.AppCompat.Button.Colored"/>
+
+                <Button
+                    android:id="@+id/btn_collapse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Collapse Hospital List"
+                    android:textColor="#FFF"
+                    android:backgroundTint="#5E9CD8"
+                    style="@style/Widget.AppCompat.Button.Colored"/>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_card1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_weight="0"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="7dp">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Select All Hospitals"
+                        android:textColor="#FFF"
+                        android:backgroundTint="#008577"
+                        style="@style/Widget.AppCompat.Button.Colored"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Deselect All Hospitals"
+                        android:textColor="#FFF"
+                        android:backgroundTint="#008577"
+                        style="@style/Widget.AppCompat.Button.Colored"/>
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/hospital_tv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="197dp"
+                    android:layout_margin="5dp"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="7dp">
+
+                </ListView>
+                <!--<ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="7dp">
+
+                        <CheckBox
+                            android:id="@+id/checkBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Maharashtra, Aundh Civil Hospital, Pune"
+                            android:fontFamily="serif"/>
+
+                        <CheckBox
+                            android:id="@+id/checkBox2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Maharashtra, Bharati Vidyapeeth Hospital, Pune"
+                            android:fontFamily="serif"/>
+
+                        <CheckBox
+                            android:id="@+id/checkBox3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Maharashtra, Indira Gandhi Memorial Hospital, Bhiwandi"
+                            android:fontFamily="serif"/>
+
+                    </LinearLayout>
+
+                </ScrollView>-->
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:layout_weight="1">
+
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:backgroundTint="#ECF2FA"
+            android:layout_weight="0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="5"
+                    android:layout_margin="7dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Date of Visit:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:fontFamily="serif"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_weight="5"
+                        android:editable="false"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:weightSum="4"
+                    android:background="#ECF2FA">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/corners"
+                        android:layout_margin="5dp">
+
+                        <Button
+                            android:id="@+id/btn_calendar1"
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="0"
+                            android:background="@drawable/ic_calendar_icon"
+                            android:textColor="@android:color/white" />
+
+                    </android.support.v7.widget.CardView>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:id="@+id/r1">
+
+                            <RadioButton
+                                android:id="@+id/btn_after1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="After"/>
+
+                            <RadioButton
+                                android:id="@+id/btn_before1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Before"/>
+
+                            <RadioButton
+                                android:id="@+id/btn_on1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="On"/>
+
+                            <RadioButton
+                                android:id="@+id/btn_between1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Between"/>
+
+                        </RadioGroup>
+
+                        <TextView
+                            android:id="@+id/tv_SelectedDate1"
+                            android:layout_weight="4"
+                            android:layout_margin="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000"
+                            android:background="#FFF"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textStyle="normal"
+                            android:fontFamily="serif"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:backgroundTint="#ECF2FA"
+                    android:layout_weight="0"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="5dp"
+                        android:weightSum="4">
+
+
+                        <Button
+                            android:id="@+id/btn_calendar2"
+                            android:layout_width="60dp"
+                            android:layout_margin="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="0"
+                            android:background="@drawable/ic_calendar_icon"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:id="@+id/dob1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_margin="5dp"
+                            android:textColor="#000"
+                            android:background="#FFF"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textStyle="normal"
+                            android:fontFamily="serif"/>
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:backgroundTint="#ECF2FA"
+            android:layout_weight="0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="5"
+                    android:layout_margin="7dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Date of Next Visit:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:fontFamily="serif"
+                        android:textColor="#000"
+                        android:layout_weight="5"
+                        android:textStyle="bold"
+                        android:editable="false"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:weightSum="4">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/corners"
+                        android:layout_margin="5dp">
+
+                        <Button
+                            android:id="@+id/btn_calendar3"
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="0"
+                            android:background="@drawable/ic_calendar_icon"
+                            android:textColor="@android:color/white" />
+
+                    </android.support.v7.widget.CardView>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:id="@+id/r3">
+
+                            <RadioButton
+                                android:id="@+id/btn_after3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="After"/>
+
+                            <RadioButton
+                                android:id="@+id/btn_before3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Before"/>
+
+                            <RadioButton
+                                android:id="@+id/btn_on3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="On"/>
+
+                            <RadioButton
+                                android:id="@+id/btn_between3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Between"/>
+
+                        </RadioGroup>
+
+
+                        <TextView
+
+                            android:id="@+id/tv_SelectedDate_next1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:layout_margin="5dp"
+                            android:textColor="#000"
+                            android:background="#FFF"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textStyle="normal"
+                            android:fontFamily="serif"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:backgroundTint="#ECF2FA"
+                    android:layout_weight="0"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="5dp"
+                        android:weightSum="4">
+
+                        <Button
+                            android:id="@+id/btn_calendar4"
+                            android:layout_margin="1dp"
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="0"
+                            android:background="@drawable/ic_calendar_icon"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:id="@+id/dob2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_margin="5dp"
+                            android:textColor="#000"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textStyle="normal"
+                            android:fontFamily="serif"
+                            android:background="#FFF"/>
+
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="7dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="Left foot treatment:  "
+                        android:textColor="#000"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textStyle="bold"
+                        android:fontFamily="serif"
+                        android:editable="false"
+                        />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Any "
+                            android:fontFamily="serif"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" None   "
+                            android:fontFamily="serif"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  C - Manipulation and Casting "
+                            android:fontFamily="serif"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" T - Tenotomy "
+                            android:fontFamily="serif"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" B - Brace "
+                            android:fontFamily="serif"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" R - Refer "
+                            android:fontFamily="serif"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" S - Surgery "
+                            android:fontFamily="serif"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  O - Other "
+                            android:fontFamily="serif"/>
+
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="Right foot treatment:  "
+                        android:textColor="#000"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textStyle="bold"
+                        android:fontFamily="serif"
+                        android:editable="false" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Any "
+                            android:fontFamily="serif"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" None   "
+                            android:fontFamily="serif"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  C - Manipulation and Casting "
+                            android:fontFamily="serif"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" T - Tenotomy "
+                            android:fontFamily="serif"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" B - Brace "
+                            android:fontFamily="serif"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" R - Refer "
+                            android:fontFamily="serif"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" S - Surgery "
+                            android:fontFamily="serif"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  O - Other "
+                            android:fontFamily="serif"/>
+
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="7dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Generate Report"
+                    android:textColor="#FFF"
+                    android:backgroundTint="#008577"
+                    style="@style/Widget.AppCompat.Button.Colored"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Clear"
+                    android:textColor="#FFF"
+                    android:backgroundTint="#008577"
+                    style="@style/Widget.AppCompat.Button.Colored"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

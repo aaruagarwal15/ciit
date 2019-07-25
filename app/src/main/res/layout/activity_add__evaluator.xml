@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_Evaluator"
+    android:orientation="vertical"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_weight="0"
+        android:backgroundTint="#ECF2FA">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Evaluator"
+            android:layout_marginTop="7dp"
+            android:fontFamily="serif"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textStyle="bold"
+            android:editable="false" />
+
+    </android.support.v7.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="7dp"
+            android:layout_weight="0">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tv_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name:"
+                android:fontFamily="serif">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/editText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:fontFamily="serif"
+                    android:inputType="text">
+
+                </android.support.design.widget.TextInputEditText>
+            </android.support.design.widget.TextInputLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="7dp"
+            android:layout_weight="0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Title:"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    android:editable="false"/>
+
+                <Spinner
+                    android:id="@+id/Select_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif">
+                </Spinner>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ScrollView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/tv_hospitals"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hospitals:"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:fontFamily="serif"
+                    android:editable="false"/>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <CheckBox
+                            android:id="@+id/checkBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Maharashtra, Aundh Civil Hospital, Pune"
+                            android:fontFamily="serif"/>
+
+                        <CheckBox
+                            android:id="@+id/checkBox2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Maharashtra, Bharati Vidyapeeth Hospital, Pune"
+                            android:fontFamily="serif"/>
+
+                        <CheckBox
+                            android:id="@+id/checkBox3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Maharashtra, Indira Gandhi Memorial Hospital, Bhiwandi"
+                            android:fontFamily="serif"/>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <Button
+            android:id="@+id/btn_save"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#34AA97"
+            android:text="Save"
+            android:textColor="#FFF"
+            android:layout_weight="0"/>
+
+    </LinearLayout>
+
+</LinearLayout>

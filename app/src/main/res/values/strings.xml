@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">ciit</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="drawer_open">"drawer open"</string>
+    <string name="drawer_close">"drawer_close"</string>
+    <string-array name="Title">
+        <item>Select a Title: </item>
+        <item>Doctor</item>
+        <item>Nurse</item>
+        <item>Midwife</item>
+        <item>Physical Therapist </item>
+        <item>Officer</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="Visits">
+        <item>The visits are:</item>
+        <item>before</item>
+        <item>on</item>
+        <item>after</item>
+        <item>between</item>
+    </string-array>
+
+    <string-array name="Visits_next">
+        <item>The visits are:</item>
+        <item>before</item>
+        <item>on</item>
+        <item>after</item>
+        <item>between</item>
+    </string-array>
+
+</resources>

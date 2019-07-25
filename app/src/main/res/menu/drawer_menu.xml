@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id = '@+id/patient'
+
+            android:title="PATIENTS"
+            android:fontFamily="serif">
+            <menu>
+                <item
+                    android:id = '@+id/view_patient'
+                    android:icon="@drawable/ic_patient"
+                    android:title="VIEW PATIENTS"
+                    android:fontFamily="serif"/>
+                <item
+                    android:id = '@+id/add_patient'
+                    android:title="ADD PATIENTS"
+                    android:icon="@drawable/ic_patient"
+                    android:fontFamily="serif"/>
+            </menu>
+        </item>
+        <item
+            android:id = '@+id/evaluator'
+            android:icon="@drawable/ic_patient"
+            android:title="EVALUATOR"
+            android:fontFamily="serif"
+            >
+            <menu>
+                <item
+                    android:id = '@+id/view_evaluator'
+                    android:title="VIEW EVALUATOR"
+                    android:icon="@drawable/ic_new_game"
+                    android:fontFamily="serif"/>
+                <item
+                    android:id = '@+id/add_evaluator'
+                    android:title="ADD EVALUATOR"
+                    android:icon="@drawable/ic_new_game"
+                    android:fontFamily="serif"/>
+
+            </menu>
+        </item>
+        <item
+            android:id = '@+id/report'
+            android:icon="@drawable/ic_report"
+            android:title="REPORT"
+            android:fontFamily="serif"
+            >
+            <menu>
+                <item
+                    android:id = '@+id/hospital_report'
+                    android:title="HOSPITAL REPORT"
+                    android:icon="@drawable/ic_report"
+                    android:fontFamily="serif"/>
+                <item
+                    android:id = '@+id/patient_report'
+                    android:title="PATIENT REPORT"
+                    android:icon="@drawable/ic_report"
+                    android:fontFamily="serif"/>
+                <item
+                    android:id = '@+id/visit_report'
+                    android:title="VISIT REPORT"
+                    android:icon="@drawable/ic_report"
+                    android:fontFamily="serif"/>
+
+            </menu>
+        </item>
+        <item
+            android:id = '@+id/hospital'
+            android:icon="@drawable/ic_hospital"
+            android:title="HOSPITAL"
+            android:fontFamily="serif"
+            />
+        <item
+            android:id = '@+id/acc'
+            android:icon="@drawable/ic_account"
+            android:title="MY ACCOUNT"
+            android:fontFamily="serif"
+            >
+            <menu>
+                <item
+                    android:id = '@+id/account_info'
+                    android:title="ACCOUNT INFORMATION"
+                    android:icon="@drawable/ic_account"
+                    android:fontFamily="serif"/>
+                <item
+                    android:id = '@+id/sys_logout'
+                    android:title="LOGOUT"
+                    android:icon="@drawable/ic_account"
+                    android:fontFamily="serif"/>
+
+            </menu>
+        </item>
+
+
+
+    </group>
+
+</menu>
